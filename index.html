@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== COVER / LANDING ===== -->
+  <section id="cover">
+    <div class="cover-overlay"></div>
+    <div class="cover-content">
+      <p class="cover-label">Undangan Pernikahan</p>
+      <h1 class="couple-names">Dicky <span>&</span> Febriana</h1>
+      <p class="cover-date">Minggu, 04 Oktober 2026</p>
+      <div class="cover-guest-wrap" id="cover-guest-wrap">
+        <p class="cover-guest-label">Kepada Yth.</p>
+        <p class="cover-guest-name" id="cover-guest-name"></p>
+      </div>
+      <button class="open-btn" onclick="openInvitation()">
+        Buka Undangan
+        <span class="btn-icon">↓</span>
+      </button>
+    </div>
+    <div class="cover-deco top-left"></div>
+    <div class="cover-deco bottom-right"></div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content" class="hidden">
+
+    <!-- BISMILLAH / PEMBUKA -->
+    <section class="section bismillah-section">
+      <div class="ornament">✦ ✦ ✦</div>
+      <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+      <p class="bismillah-text">
+        Dengan memohon Rahmat dan Ridho Allah SWT,<br>
+        kami mengundang<br>
+        <span id="bismillah-guest-name" class="bismillah-guest"></span>
+        untuk menghadiri pernikahan kami
+      </p>
+      <div class="ornament">✦ ✦ ✦</div>
+    </section>
+
+    <!-- MEMPELAI -->
+    <section class="section couple-section">
+      <div class="couple-card">
+        <div class="mempelai">
+          <div class="photo-frame">
+            <img src="assets/img/cowo.jpeg" alt="Dicky"/>
+          </div>
+          <h2 class="mempelai-name">Dicky Wijanarko</h2>
+          <p class="mempelai-parents">Putra pertama dari<br><strong>Bpk. Senen</strong> & <strong>Ibu Winarni</strong></p>
+          
+        </div>
+
+        <div class="and-symbol">
+          <span>&</span>
+        </div>
+
+        <div class="mempelai">
+          <div class="photo-frame">
+            <img src="assets/img/cewe.jpeg" alt="Febriana">
+          </div>
+          <h2 class="mempelai-name">Febriana Eka Widiastuti</h2>
+          <p class="mempelai-parents">Putri pertama dari<br><strong>Bpk. Wigiyarto</strong> & <strong>Ibu Wiji Lestari</strong></p>
+          <div class="sosmed">
+            <a href="#"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAVE THE DATE / COUNTDOWN -->
+    <section class="section countdown-section">
+      <div class="section-label">Save The Date</div>
+      <h2 class="section-title">Menuju Hari Bahagia</h2>
+      <div class="countdown" id="countdown">
+        <div class="count-box">
+          <span id="days">00</span>
+          <label>Hari</label>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-box">
+          <span id="hours">00</span>
+          <label>Jam</label>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-box">
+          <span id="minutes">00</span>
+          <label>Menit</label>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-box">
+          <span id="seconds">00</span>
+          <label>Detik</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACARA -->
+    <section class="section event-section">
+      <div class="section-label">Rangkaian Acara</div>
+      <div class="event-grid">
+        <div class="event-card">
+          <div class="event-icon">🌸</div>
+          <h3>Akad Nikah</h3>
+          <div class="event-detail">
+            <p><strong>Minggu, 04 Oktober 2026</strong></p>
+            <p>08.00 – 10.00 WIB</p>
+            <p class="event-place">Rumah Mempelai Wanita<br>Tanggung Mulyo RT 18 RW 08, Karangmalang, Masaran, Sragen</p>
+          </div>
+          <a href="https://www.google.com/maps/place/7%C2%B028'38.8%22S+110%C2%B054'45.6%22E/@-7.477437,110.9100836,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-7.477437!4d110.9126585?hl=id&entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">📍 Lihat Lokasi</a>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">🥂</div>
+          <h3>Resepsi</h3>
+          <div class="event-detail">
+            <p><strong>Selasa, 06 Oktober 2026</strong></p>
+            <p>10.00 – 12.00 WIB</p>
+            <p class="event-place">Rumah Mempelai Pria<br>Jatirejo, Genengan, Jumantono, Karanganyar</p>
+          </div>
+          <a href="https://www.google.com/maps/place/7%C2%B039'43.9%22S+111%C2%B000'44.5%22E/@-7.6621905,111.0097902,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-7.6621905!4d111.0123651?hl=id&entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">📍 Lihat Lokasi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section gallery-section">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">Momen Kami</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/img/galery1 (1).jpeg" alt="Galeri 1">
+        </div>
+        <div class="gallery-item tall">
+          <img src="assets/img/galery1 (4).jpeg" alt="Galeri 4"/>
+        </div>
+        <div class="gallery-item tall">
+          <img src="assets/img/galery1 (5).jpeg" alt="Galeri 5"/>
+        </div>
+        <div class="gallery-item tall">
+          <img src="assets/img/galery1 (8).jpeg" alt="Galeri 8"/>
+        </div>
+        <div class="gallery-item tall">
+          <img src="assets/img/galery1 (9).jpeg" alt="Galeri 9"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- UCAPAN & DOA -->
+    <section class="section wishes-section">
+      <div class="section-label">Ucapan & Doa</div>
+      <h2 class="section-title">Kirim Ucapan</h2>
+
+      <form class="wish-form" onsubmit="submitWish(event)">
+        <input type="text" id="wish-name" placeholder="Nama Anda" required />
+        <select id="wish-attend">
+          <option value="">-- Konfirmasi Kehadiran --</option>
+          <option value="hadir">✅ Hadir</option>
+          <option value="tidak">❌ Tidak Hadir</option>
+          <option value="ragu">🤔 Masih Ragu</option>
+        </select>
+        <textarea id="wish-message" placeholder="Tulis ucapan & doa terbaik Anda..." rows="4" required></textarea>
+        <button type="submit" class="submit-btn">Kirim Ucapan 💌</button>
+      </form>
+
+      <div class="wishes-list" id="wishes-list"></div>
+    </section>
+
+    <!-- GIFT -->
+    <section class="section gift-section">
+      <div class="section-label">Hadiah Pernikahan</div>
+      <h2 class="section-title">Kirim Hadiah</h2>
+      <p class="gift-intro">
+        Doa dan kehadiran Anda adalah hadiah terbaik bagi kami.<br>
+        Namun jika ingin memberi hadiah, berikut informasinya:
+      </p>
+
+      <div class="gift-tabs">
+        <button class="gift-tab active" onclick="switchGiftTab('transfer', this)">💳 Transfer</button>
+        <button class="gift-tab" onclick="switchGiftTab('alamat', this)">📦 Kirim Kado</button>
+      </div>
+
+      <!-- TAB TRANSFER -->
+      <div class="gift-panel" id="panel-transfer">
+        <div class="bank-card">
+          <div class="bank-logo-row">
+            <span class="bank-name">🏦 DANA</span>
+            <span class="bank-badge">Mempelai Pria</span>
+          </div>
+          <div class="bank-number" id="rek-bca">085701723352</div>
+          <p class="bank-holder">a.n. <strong>Dicky Wijanarko</strong></p>
+          <button class="copy-btn" onclick="copyRek('rek-bca', this)">
+            <span>📋 Salin Nomor</span>
+          </button>
+        </div>
+      </div>
+
+
+      <!-- TAB ALAMAT -->
+      <div class="gift-panel hidden" id="panel-alamat">
+        <div class="address-card">
+          <div class="address-icon">🏠</div>
+          <h4>Alamat Pengiriman</h4>
+          <p class="address-text">
+            <strong>Dicky Wijanarko</strong><br>
+            Jatirejo, Genengan, Jumantono,<br>
+            Karanganyar, Jawa Tengah<br>
+            <strong>Kode Pos: 57782</strong>
+          </p>
+          <p class="address-note">
+            📞 Hubungi terlebih dahulu sebelum mengirim kado:<br>
+            <a href="tel:+6281234567890" class="phone-link">085701723352</a>
+          </p>
+          <button class="copy-btn" onclick="copyAlamat(this)">
+            <span>📋 Salin Alamat</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="section closing-section">
+      <div class="ornament">✦ ✦ ✦</div>
+      <p class="arabic-small">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا</p>
+      <p class="quran-ref">QS. Ar-Rum: 21</p>
+      <p class="closing-text">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami<br>
+        apabila Bapak/Ibu/Saudara/i berkenan hadir<br>
+        dan memberikan doa restu.
+      </p>
+      <h2 class="couple-names-closing">Dicky & Febriana</h2>
+      <p class="closing-sub">— Beserta keluarga besar —</p>
+      <div class="ornament">✦ ✦ ✦</div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Made with ❤️ · Fr12.co</p>
+    </footer>
+
+  </main>
+
+  <!-- MUSIK PLAYER -->
+  <div class="music-player" id="music-player" style="display:none">
+    <audio id="bg-music" loop>
+      <source src="assets/music/DENOK - Cindi Cintya feat Sadewok Official Music Video.mp3">
+    </audio>
+    <button class="music-btn" id="music-btn" onclick="toggleMusic()">🎵</button>
+    <span class="music-label">Musik</span>
+  </div>
+
+  <!-- ===== FIREBASE CDN (COMPAT — tidak butuh type="module") ===== -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script>
+    // Inisialisasi Firebase — ganti dengan config milik Anda
+    firebase.initializeApp({
+      apiKey:            "AIzaSyBQdRf1rHSS8_xP1jLgVcHWaP8JjFOqzYw",
+      authDomain:        "undangan-dicky-febriana.firebaseapp.com",
+      projectId:         "undangan-dicky-febriana",
+      storageBucket:     "undangan-dicky-febriana.firebasestorage.app",
+      messagingSenderId: "913334981992",
+      appId:             "1:913334981992:web:06b95be93c77cbe96bb2dd"
+    });
+  </script>
+
+  <!-- Script utama — TANPA type="module" agar onclick bisa bekerja -->
+  <script src="script.js"></script>
+</body>
+</html>

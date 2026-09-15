@@ -1,0 +1,1095 @@
+/* =========================================
+   MOBILE ONLY WEDDING INVITATION
+========================================= */
+
+:root{
+  --gold:#d4af6a;
+  --gold-dark:#b78b42;
+  --cream:#fdf8f3;
+  --white:#ffffff;
+  --text:#2c2015;
+  --text-soft:#6d5d4a;
+
+  --font-serif:'Cormorant Garamond', serif;
+  --font-sans:'Raleway', sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:var(--font-sans);
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+
+  max-width:430px;
+  margin:auto;
+  position:relative;
+}
+
+/* =========================================
+   COVER
+========================================= */
+
+#cover{
+  position:fixed;
+  inset:0;
+  z-index:999;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.55)
+    ),
+    url('assets/img/galery1\ \(5\).jpeg');
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:.8s;
+}
+
+#cover.hide{
+  opacity:0;
+  visibility:hidden;
+}
+
+.cover-overlay{
+  display:none;
+}
+
+.cover-content{
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.cover-label{
+  font-size:.7rem;
+  letter-spacing:4px;
+  margin-bottom:20px;
+  color:#f3dfb1;
+}
+
+.cover-content .couple-names{
+  font-family:var(--font-serif);
+  font-size:3.2rem;
+  font-weight:300;
+  line-height:1.1;
+}
+
+.cover-content .couple-names span{
+  display:block;
+  font-size:.5em;
+  color:#f3dfb1;
+  margin:10px 0;
+}
+
+.cover-date{
+  margin-top:15px;
+  font-size:.9rem;
+  letter-spacing:2px;
+  color:#f3dfb1;
+}
+
+.open-btn{
+  margin:35px auto 0;
+  border:none;
+  background:var(--gold);
+  color:white;
+
+  padding:14px 28px;
+  border-radius:50px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  font-size:.8rem;
+  letter-spacing:2px;
+
+  cursor:pointer;
+}
+
+.cover-deco{
+  display:none;
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+.section{
+  padding:70px 18px;
+  text-align:center;
+}
+
+.section-label{
+  font-size:.7rem;
+  letter-spacing:4px;
+  color:var(--gold-dark);
+  margin-bottom:10px;
+}
+
+.section-title{
+  font-family:var(--font-serif);
+  font-size:2.2rem;
+  font-weight:300;
+  margin-bottom:35px;
+}
+
+.ornament{
+  color:var(--gold);
+  margin:15px 0;
+}
+
+/* =========================================
+   BISMILLAH
+========================================= */
+
+.bismillah-section{
+  background:#fffaf3;
+}
+
+.arabic{
+  font-size:2rem;
+  color:var(--gold-dark);
+  margin:20px 0;
+}
+
+.bismillah-text{
+  line-height:2;
+  font-size:.95rem;
+  color:var(--text-soft);
+}
+
+/* =========================================
+   MEMPELAI
+========================================= */
+
+.couple-card{
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+
+.mempelai{
+  width:100%;
+}
+
+.photo-frame{
+  width:150px;
+  height:150px;
+
+  margin:auto auto 20px;
+
+  border-radius:50%;
+  overflow:hidden;
+
+  border:4px solid #f2dfb0;
+}
+
+.photo-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.mempelai-name{
+  font-family:var(--font-serif);
+  font-size:1.7rem;
+  margin-bottom:10px;
+}
+
+.mempelai-parents{
+  font-size:.85rem;
+  line-height:1.8;
+  color:var(--text-soft);
+}
+
+.sosmed a{
+  display:inline-block;
+  margin-top:10px;
+
+  color:var(--gold-dark);
+  text-decoration:none;
+  font-size:.85rem;
+}
+
+.and-symbol{
+  font-size:3rem;
+  color:var(--gold);
+  font-family:var(--font-serif);
+}
+
+/* =========================================
+   COUNTDOWN
+========================================= */
+
+.countdown-section{
+  background:#2b1f14;
+  color:white;
+}
+
+.countdown-section .section-title{
+  color:white;
+}
+
+.countdown{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.count-box{
+  background:rgba(255,255,255,.08);
+
+  border:1px solid rgba(255,255,255,.1);
+
+  border-radius:15px;
+
+  padding:20px 10px;
+}
+
+.count-box span{
+  display:block;
+
+  font-size:2rem;
+  color:#f3dfb1;
+
+  font-family:var(--font-serif);
+}
+
+.count-box label{
+  margin-top:8px;
+  display:block;
+
+  font-size:.7rem;
+  letter-spacing:2px;
+}
+
+.count-sep{
+  display:none;
+}
+
+/* =========================================
+   EVENT
+========================================= */
+
+.event-grid{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.event-card{
+  background:white;
+
+  border-radius:20px;
+
+  padding:25px 20px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.event-icon{
+  font-size:2rem;
+  margin-bottom:15px;
+}
+
+.event-card h3{
+  font-family:var(--font-serif);
+  font-size:1.5rem;
+  margin-bottom:15px;
+}
+
+.event-detail{
+  font-size:.9rem;
+  line-height:2;
+  color:var(--text-soft);
+}
+
+.event-place{
+  margin-top:10px;
+}
+
+.map-btn{
+  display:inline-block;
+
+  margin-top:20px;
+
+  padding:10px 20px;
+
+  border-radius:50px;
+
+  background:var(--gold);
+  color:white;
+
+  text-decoration:none;
+  font-size:.8rem;
+}
+
+/* =========================================
+   GALERI
+========================================= */
+
+.gallery-grid{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.gallery-item{
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.gallery-item img{
+  width:100%;
+  display:block;
+}
+
+/* =========================================
+   UCAPAN
+========================================= */
+
+.wish-form{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.wish-form input,
+.wish-form select,
+.wish-form textarea{
+  width:100%;
+
+  padding:14px;
+
+  border:none;
+  border-radius:14px;
+
+  background:white;
+
+  font-size:.9rem;
+
+  outline:none;
+}
+
+.submit-btn{
+  background:var(--gold-dark);
+  color:white;
+
+  border:none;
+
+  padding:15px;
+
+  border-radius:50px;
+
+  font-size:.85rem;
+
+  cursor:pointer;
+}
+
+.wishes-list{
+  margin-top:35px;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.wish-item{
+  display:flex;
+  gap:12px;
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:15px;
+
+  text-align:left;
+}
+
+.wish-avatar{
+  width:42px;
+  height:42px;
+
+  border-radius:50%;
+
+  background:var(--gold);
+
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.wish-content p{
+  margin-top:6px;
+
+  font-size:.85rem;
+  line-height:1.7;
+
+  color:var(--text-soft);
+}
+
+/* =========================================
+   CLOSING
+========================================= */
+
+.closing-section{
+  background:#fffaf3;
+}
+
+.arabic-small{
+  font-size:1.5rem;
+  color:var(--gold-dark);
+  margin:15px 0;
+}
+
+.quran-ref{
+  font-size:.8rem;
+  margin-bottom:20px;
+}
+
+.closing-text{
+  line-height:2;
+  color:var(--text-soft);
+  font-size:.95rem;
+}
+
+.couple-names-closing{
+  font-family:var(--font-serif);
+  font-size:2.5rem;
+  margin-top:20px;
+}
+
+.closing-sub{
+  font-size:.8rem;
+  margin-top:5px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer{
+  background:#2b1f14;
+  color:rgba(255,255,255,.6);
+
+  text-align:center;
+
+  padding:20px;
+
+  font-size:.75rem;
+}
+
+/* =========================================
+   MUSIC PLAYER
+========================================= */
+
+.music-player{
+  position:fixed;
+
+  bottom:15px;
+  right:15px;
+
+  background:rgba(0,0,0,.7);
+
+  padding:8px 12px 8px 8px;
+
+  border-radius:50px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  z-index:999;
+}
+
+.music-btn{
+  width:38px;
+  height:38px;
+
+  border:none;
+  border-radius:50%;
+
+  background:var(--gold);
+
+  cursor:pointer;
+}
+
+.music-label{
+  color:white;
+  font-size:.7rem;
+  max-width:100px;
+  overflow:hidden;
+}
+
+/* =========================================
+   GIFT
+========================================= */
+
+.gift-section{
+  background:#fffaf3;
+}
+
+.gift-intro{
+  font-size:.9rem;
+  line-height:1.9;
+  color:var(--text-soft);
+  margin-bottom:28px;
+}
+
+.gift-tabs{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-bottom:25px;
+}
+
+.gift-tab{
+  border:2px solid var(--gold);
+  background:transparent;
+  color:var(--gold-dark);
+
+  padding:10px 22px;
+  border-radius:50px;
+
+  font-size:.8rem;
+  letter-spacing:1px;
+
+  cursor:pointer;
+  transition:all .3s;
+}
+
+.gift-tab.active{
+  background:var(--gold);
+  color:white;
+}
+
+.gift-panel{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.gift-panel.hidden{
+  display:none;
+}
+
+.bank-card{
+  background:white;
+  border-radius:20px;
+  padding:22px 20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+  text-align:left;
+  border-left:4px solid var(--gold);
+}
+
+.bank-logo-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px;
+}
+
+.bank-name{
+  font-size:1rem;
+  font-weight:500;
+  color:var(--text);
+}
+
+.bank-badge{
+  font-size:.7rem;
+  background:#fdf1d8;
+  color:var(--gold-dark);
+  padding:4px 10px;
+  border-radius:20px;
+}
+
+.bank-number{
+  font-family:var(--font-serif);
+  font-size:1.7rem;
+  letter-spacing:3px;
+  color:var(--gold-dark);
+  margin-bottom:6px;
+}
+
+.bank-holder{
+  font-size:.82rem;
+  color:var(--text-soft);
+  margin-bottom:15px;
+}
+
+.copy-btn{
+  width:100%;
+  border:1.5px solid var(--gold);
+  background:transparent;
+  color:var(--gold-dark);
+
+  padding:11px;
+  border-radius:50px;
+
+  font-size:.8rem;
+  cursor:pointer;
+  transition:all .3s;
+}
+
+.copy-btn.copied{
+  background:var(--gold);
+  color:white;
+  border-color:var(--gold);
+}
+
+.address-card{
+  background:white;
+  border-radius:20px;
+  padding:25px 20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+  text-align:center;
+  border-top:4px solid var(--gold);
+}
+
+.address-icon{
+  font-size:2.5rem;
+  margin-bottom:12px;
+}
+
+.address-card h4{
+  font-family:var(--font-serif);
+  font-size:1.3rem;
+  margin-bottom:14px;
+}
+
+.address-text{
+  font-size:.88rem;
+  line-height:2;
+  color:var(--text-soft);
+  margin-bottom:15px;
+}
+
+.address-note{
+  font-size:.82rem;
+  color:var(--text-soft);
+  margin-bottom:18px;
+  line-height:1.8;
+}
+
+.phone-link{
+  color:var(--gold-dark);
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+
+
+@keyframes fadeInUp{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+/* =========================================
+   COVER GUEST NAME
+========================================= */
+
+.cover-guest-wrap{
+  margin-top:18px;
+  opacity:0;
+  transition:opacity .6s;
+}
+
+.cover-guest-wrap.visible{
+  opacity:1;
+}
+
+.cover-guest-label{
+  font-size:.65rem;
+  letter-spacing:3px;
+  color:#f3dfb1;
+  margin-bottom:4px;
+}
+
+.cover-guest-name{
+  font-family:var(--font-serif);
+  font-size:1.4rem;
+  color:#fff;
+  font-style:italic;
+}
+
+/* =========================================
+   BISMILLAH GUEST
+========================================= */
+
+.bismillah-guest{
+  display:block;
+  font-family:var(--font-serif);
+  font-size:1.3rem;
+  color:var(--gold-dark);
+  font-style:italic;
+  margin:6px 0;
+}
+
+/* =========================================
+   LINK GENERATOR
+========================================= */
+
+.link-gen-section{
+  background:#fff;
+}
+
+.link-gen-form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.link-gen-form input{
+  width:100%;
+  padding:14px;
+  border:1.5px solid #e8d9c0;
+  border-radius:14px;
+  background:var(--cream);
+  font-size:.9rem;
+  outline:none;
+  font-family:var(--font-sans);
+  transition:border-color .2s;
+}
+
+.link-gen-form input:focus{
+  border-color:var(--gold);
+}
+
+.link-result{
+  background:var(--cream);
+  border-radius:18px;
+  padding:20px;
+  border:1.5px solid #e8d9c0;
+}
+
+.link-result.hidden{
+  display:none;
+}
+
+.link-label{
+  font-size:.7rem;
+  letter-spacing:2px;
+  color:var(--gold-dark);
+  margin-bottom:8px;
+}
+
+.link-url{
+  font-size:.78rem;
+  color:var(--text-soft);
+  word-break:break-all;
+  line-height:1.6;
+  margin-bottom:18px;
+  background:white;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #e8d9c0;
+}
+
+.link-actions{
+  display:flex;
+  gap:10px;
+}
+
+.link-actions .copy-btn{
+  flex:1;
+}
+
+.wa-btn{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  background:#25D366;
+  color:white;
+  border:none;
+  padding:11px;
+  border-radius:50px;
+  font-size:.8rem;
+  text-decoration:none;
+  cursor:pointer;
+  transition:background .2s;
+}
+
+.wa-btn:hover{
+  background:#1ebe5d;
+}
+/* =========================================
+   UCAPAN — FIREBASE STATE STYLES
+========================================= */
+
+/* Loading dots */
+.wishes-loading {
+  text-align: center;
+  padding: 30px 0;
+  color: var(--text-soft);
+  font-size: .85rem;
+}
+
+.loading-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin: 0 3px;
+  animation: dotBounce .8s infinite alternate;
+}
+
+.loading-dot:nth-child(2) { animation-delay: .15s; }
+.loading-dot:nth-child(3) { animation-delay: .30s; }
+
+@keyframes dotBounce {
+  from { transform: translateY(0); opacity: .4; }
+  to   { transform: translateY(-8px); opacity: 1; }
+}
+
+.wishes-empty,
+.wishes-error {
+  text-align: center;
+  padding: 25px 0;
+  color: var(--text-soft);
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.wishes-error { color: #c0392b; }
+
+/* Timestamp ucapan */
+.wish-time {
+  display: block;
+  font-size: .72rem;
+  color: #b0a090;
+  margin-top: 6px;
+}
+
+/* Disable state tombol kirim */
+.submit-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* Badge attend */
+.wish-attend {
+  font-size: .7rem;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: #f0ebe3;
+  color: var(--text-soft);
+}
+
+.wish-attend.hadir { background: #e8f5e9; color: #2e7d32; }
+.wish-attend.tidak { background: #fce4ec; color: #c62828; }
+.wish-attend.ragu  { background: #fff8e1; color: #f57f17; }
+/* =========================================
+   MUSIC PLAYER - VISIBLE STATE
+========================================= */
+.music-player.visible {
+  display: flex !important;
+}
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+.section.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.section.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================
+   WISH HEADER
+========================================= */
+.wish-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+/* =========================================
+   HIDDEN UTILITY — WAJIB ADA
+========================================= */
+.hidden {
+  display: none !important;
+}
+
+/* =========================================
+   UPLOAD BUKTI TRANSFER
+========================================= */
+.upload-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+  border-top: 4px solid #25D366;
+  text-align: center;
+}
+
+.upload-header {
+  margin-bottom: 18px;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.upload-header h4 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+.upload-header p {
+  font-size: .8rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.upload-area {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  border: 2px dashed #e0cfb0;
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: var(--cream);
+  transition: border-color .3s;
+}
+
+.upload-area:hover {
+  border-color: var(--gold);
+}
+
+.upload-placeholder {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.upload-big-icon {
+  font-size: 2.4rem;
+}
+
+.upload-placeholder p {
+  font-size: .9rem;
+  color: var(--text-soft);
+}
+
+.upload-placeholder small {
+  font-size: .72rem;
+  color: #b0a090;
+}
+
+#bukti-preview {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+#bukti-preview:not(.hidden) {
+  display: block;
+}
+
+#upload-actions {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-nama-label {
+  font-size: .78rem;
+  color: var(--text-soft);
+  text-align: left;
+  margin-bottom: -4px;
+}
+
+#upload-nama {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e8d9c0;
+  border-radius: 12px;
+  font-size: .9rem;
+  outline: none;
+  font-family: var(--font-sans);
+  transition: border-color .2s;
+}
+
+#upload-nama:focus {
+  border-color: var(--gold);
+}
+
+.upload-wa-btn {
+  width: 100%;
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  font-size: .88rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.upload-wa-btn:hover {
+  background: #1ebe5d;
+}
+
+.upload-reset-btn {
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid #e0cfb0;
+  color: var(--text-soft);
+  padding: 11px;
+  border-radius: 50px;
+  font-size: .8rem;
+  cursor: pointer;
+}
